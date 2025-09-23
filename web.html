@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titanic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titanic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #f0a500;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    input, textarea, progress {
+      margin: 5px 0 15px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      max-width: 400px;
+    }
+    input[type="submit"] {
+      background-color: #f0a500;
+      color: black;
+      cursor: pointer;
+      width: auto;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>titanic/jack </h1>
-    <p>Welcome to my HTML5 practice project!</p>
-    <SVG WIDTH="2000" height="1000">
-        <CIRCLE CX="80"  CY="80" R="50" FILL="green" /> stroke="black" stroke-width="3/>"
-    </SVG>
-<section>
-    <h2>my skills progress</h2>
-    <p>HTML5 learning progress:
-    </p>
+  <h1>Titanic / Jack</h1>
+  <p>Welcome to my HTML5 practice project!</p>
+
+  <!-- SVG Circle -->
+  <svg width="2000" height="1000">
+    <circle cx="80" cy="80" r="50" fill="green" stroke="black" stroke-width="3" />
+  </svg>
+
+  <!-- Skills Progress Section -->
+  <section>
+    <h2>My Skills Progress</h2>
+    <p>HTML5 learning progress:</p>
     <progress value="50" max="100"></progress>
     <p>CSS Learning progress:</p>
     <progress value="50" max="100"></progress>
     <p>JavaScript learning progress:</p>
     <progress value="30" max="100"></progress>
- </section>
- <section>
+  </section>
+
+  <!-- Search Example Section -->
+  <section>
     <h2>Search Example</h2>
     <label for="tools">Favorite Web Tool:</label>
     <input id="tools" type="text" list="webtools" placeholder="Choose or Type a tool">
-    <option value="webtools">
-    <option value="Visual Studio Code">
-    <option value="Sublime Text">
-    <option value="Figma">
-    <option value="Github">
-</datalist>
-</section>
-<section>
-     <h2>Contact Me</h2>
-     <form autocomplete="off">
+    <datalist id="webtools">
+      <option value="Visual Studio Code">
+      <option value="Sublime Text">
+      <option value="Figma">
+      <option value="Github">
+    </datalist>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section>
+    <h2>Contact Me</h2>
+    <form autocomplete="off">
       <label for="name">Full Name:</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
 
@@ -42,17 +82,16 @@
       <input type="email" id="email" name="email" placeholder="example@example.com" required>
 
       <label for="url">Portfolio Website:</label>
-      <input type="url" id="url" name="url" placeholder="https://example.com"></label>
-    
-      <label for="tel">Phone Number:</label>
-      <input type="tel" id="tel" name="tel" placeholder="555-555-1211"></label>
+      <input type="url" id="url" name="url" placeholder="https://example.com">
 
-      <label for="Message">Message:</label>
-      <textarea type="message" id="message" name="message" placeholder="write something..." required></textarea>
-    
-      <input type="submit" value="send">
- 
-     </form>
-      </section>
-      </body>
+      <label for="tel">Phone Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="555-555-1211">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+      <input type="submit" value="Send">
+    </form>
+  </section>
+</body>
 </html>
